@@ -1,0 +1,20 @@
+//question(1)
+
+function compareJSON(obj1, objt2) {
+    let string1 = JSON.stringify(obj1 );
+    let string2 = JSON.stringify(obj2 );
+
+     return string1 === string2;
+}
+
+let obj1 = { name: " person   1", age: 5 };
+let obj2 = { age: 5, name: "person 1" };
+
+{
+
+if (compareJSON(obj1, obj2)) {
+    console.log("yes. this is same property.");
+} else
+    console.log(" NOT a same property");
+    
+}
